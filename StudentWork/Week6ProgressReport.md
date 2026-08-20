@@ -11,9 +11,11 @@ Definitions used for planned, executed, passed and blocked: Planned = all 20 tes
 | Metric | Formula and values | Result | Interpretation |
 |---|---|---:|---|
 | Execution progress | 15 executed / 20 planned × 100 | 75% | Three-quarters of the planned portfolio has produced an execution result; five tests remain blocked or not run. |
-| Pass rate | 11 passed / 15 executed × 100 | 73.3% | Four executed tests failed, so the pass rate alone does not support release readiness. |
-| Blocked proportion | 2 blocked / 20 planned × 100 | 10% | SMS-dependent testing is blocked by the unavailable sandbox, leaving reminder and resilience evidence incomplete. |
-| High/Critical coverage | 9 executed High/Critical tests / 13 planned High/Critical tests × 100 | 69.2% | High/Critical coverage is incomplete; TC-013, TC-014, TC-016 and TC-018 have not yet produced execution results. |
+| Pass rate | 11 passed / 15 executed × 100 | 73.3% | ... |
+| Blocked proportion | 2 blocked / 20 planned × 100 | 10% | ... |
+| High/Critical coverage | 9 executed High/Critical tests / 13 planned High/Critical tests × 100 | 69.2% | ... |
+
+Note: If a reporting tool counted Blocked tests as Executed, execution progress would appear as 17/20 = 85% rather than 75%, because the two blocked SMS tests would be included even though they did not produce a Passed or Failed execution result.
 
 ## Status and forecast
 
